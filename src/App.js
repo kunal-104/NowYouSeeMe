@@ -65,6 +65,7 @@ function App() {
     const data = {
       location,
       ipAddress,
+      timestamp: new Date(),
     };
   
     // console.log('Sending data to server:', data);
