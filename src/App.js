@@ -33,8 +33,8 @@ function App() {
           const fullLat = position.coords.latitude.toFixed(10); // 10 decimal places
           const fullLon = position.coords.longitude.toFixed(10); // 10 decimal places
           setLocation({
-            lat: fullLat,
-            lon: fullLon,
+            lat: parseFloat(fullLat),
+            lon: parseFloat(fullLon),
           });
           console.log('Sending data to server:', fullLat, fullLon);
           setLocationGranted(true);
